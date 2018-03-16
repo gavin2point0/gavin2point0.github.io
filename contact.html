@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me</title>
+    <title>Contact Me</title>
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -24,16 +24,18 @@
         </header>
         <div class="content">
             <div class="content-header">
-                <h2>About Me</h2>
+                <h2>Contact Me</h2>
             </div>
-            <div class="bio-image">
-                <img src="assets/images/placeholder300.png" alt="placeholder image">
-            </div>
-            <div class="bio">
-                <p>I started working at a web design agency when I was fifteen through an internship at my highschool. Working there is what originally sparked my interest in web development.
-                    We develop E-commerce sites on the magento platform, a platform with a great community that I got to experience first hand</p>
-                <p>After working for a while and completing a few simple projects I decided I would like to go more in depth into development as my abilities had stalled so I found a bootcamp
-                    at the Univesity of Minnesota and quickly signed up.</p>
+            <div class="contact-me"> 
+                <form action="mailto:gavin.brent.peterson@gmail.com" method="post" enctype="text/plain" id="contact-form">
+                    <label for="name">Name</label><br />
+                        <input type="text" id="name"><br />
+                    <label for="email">Email</label><br />
+                        <input type="email" id="email"><br />
+                    <label for="message">Message</label><br />
+                        <textarea id="message" form="contact-form"></textarea><br />
+                    <input type="submit" value="Submit" id="submit">
+                </form>
             </div>
         </div>
         <div class="push"></div>
